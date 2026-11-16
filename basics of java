@@ -50,7 +50,7 @@ nextBoolean()                  true                 boolean
 
 
 
-1.Datatypes program
+Datatypes program
 
 /* import java.util.Scanner;
 
@@ -125,5 +125,58 @@ Char: s
 Boolean: false
 
 
+## operators
 
+1.Arithmetic Operators:
++	Addition	     Adds two values
+-	Subtraction  	 Subtracts one value from another
+*	Multiplication	 Multiplies two values
+/	Division	     Divides one value by another
+%	Modulus	         Gives the remainder after division
+
+/*
+import java.util.Scanner;
+
+public class Operators {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("\nArithmetic:");
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        if (b != 0) {
+        System.out.println("Division: " + (a / b));
+        System.out.println("Modulus: " + (a % b));
+        }
+}
+}*/
+
+INPUT:
+Enter first number: 23
+Enter second number: 27
+
+OUTPUT:
+Arithmetic:
+Addition: 50
+Subtraction: -4
+Multiplication: 621
+Division: 0
+Modulus: 23
+
+
+2.Relational 
+<	 Less Than
+>	 Greater Than
+<=	 Less Than or Equal to
+>=	 Greater Than or Equal to
+==	 Exactly Equal to
+!=	 Not Equal to
 
