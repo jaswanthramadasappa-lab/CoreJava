@@ -48,3 +48,82 @@ nextLine()                     Hello world          string
 next().charAt(0)                J                   char
 nextBoolean()                  true                 boolean
 
+
+
+1.Datatypes program
+
+/* import java.util.Scanner;
+
+public class Firstprogram{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+    
+        System.out.print("Enter byte value: ");
+        byte a = sc.nextByte();
+
+        System.out.print("Enter short value: ");
+        short b = sc.nextShort();
+
+        System.out.print("Enter int value: ");
+        int c = sc.nextInt();
+
+        System.out.print("Enter long value: ");
+        long d = sc.nextLong();
+
+      
+        System.out.print("Enter float value: ");
+        float e = sc.nextFloat();
+
+        System.out.print("Enter double value: ");
+        double f = sc.nextDouble();
+
+
+        System.out.print("Enter char value: ");
+        char g = sc.next().charAt(0);
+
+  
+        System.out.print("Enter boolean value: ");
+        boolean h = sc.nextBoolean();
+
+     
+        System.out.println("\n--- User Input Values ---");
+
+        System.out.println("Byte: " + a);
+        System.out.println("Short: " + b);
+        System.out.println("Int: " + c);
+        System.out.println("Long: " + d);
+        System.out.println("Float: " + e);
+        System.out.println("Double: " + f);
+        System.out.println("Char: " + g);
+        System.out.println("Boolean: " + h);
+
+        sc.close();
+    }
+}*/
+
+Input:
+Enter byte value: 3
+Enter short value: 56
+Enter int value: 567
+Enter long value: 234567
+Enter float value: 67.5
+Enter double value: 2345.89
+Enter char value: s
+Enter boolean value: false
+
+Output:
+--- User Input Values ---
+Byte: 3
+Short: 56
+Int: 567
+Long: 234567
+Float: 67.5
+Double: 2345.89
+Char: s
+Boolean: false
+
+
+
+
