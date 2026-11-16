@@ -17,7 +17,7 @@ HOW JAVA EVOLVED: 30 YEARS OF STEADY UPGRADES:
 • Java 21 (Sep 2023) - Introduced virtual threads (Project Loom), pattern matching for switch statements, and record patterns.
 • Java 25 (Sep 2025) - Highlighted features include compact source files, scoped values, and compact object headers.
 
-## DATA TYPES:
+                                                    ## DATA TYPES:
 
 numerical- byte,short,int,long,float,double
 string- char,string
@@ -125,9 +125,10 @@ Char: s
 Boolean: false
 
 
-## operators
+                                                    ## operators
 
 1.Arithmetic Operators:
+
 +	Addition	     Adds two values
 -	Subtraction  	 Subtracts one value from another
 *	Multiplication	 Multiplies two values
@@ -172,11 +173,90 @@ Division: 0
 Modulus: 23
 
 
-2.Relational 
+2.Relational operator
 <	 Less Than
 >	 Greater Than
 <=	 Less Than or Equal to
 >=	 Greater Than or Equal to
 ==	 Exactly Equal to
 !=	 Not Equal to
+
+/*import java.util.Scanner;
+
+public class Operators {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        // Arithmetic Operators
+        System.out.println("\nRelational:");
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println(a > b);
+        System.out.println(a < b);
+    }
+}*/
+
+INPUT:
+Enter first number: 45
+Enter second number: 18
+
+OUTPUT:
+Relational:
+false
+true
+true
+false
+
+3.Logical operator:
+Operator	Name
+&&	     Logical AND
+||	     Logical OR
+!	     NOT Operator
+
+/*import java.util.Scanner;
+
+public class Operators {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        // Arithmetic Operators
+        System.out.println("\nLogical:");
+       
+        System.out.println(a > b && a!=b);
+        System.out.println(a < b || a==b);
+         System.out.println(!(a<b));
+    }
+}*/
+
+INPUT:
+Enter first number: 23
+Enter second number: 34
+
+OUTPUT:
+Logical:
+false
+true
+false
+
+4.Assignment operator:
+=	  Simple Assignment	       Takes the value on the right and puts it into the variable on the left
++=	   Add and Assign	       Adds and assigns the result
+-=	  Subtract and Assign	   Subtracts and assigns the resuit
+*=	  Multiply and Assign	   Multiplies and assigns the result
+/=	  Divide and Assign	       Divides and assigns the result
+%=	  Modulo and Assign	       Applies modulus and assigns the result
 
