@@ -253,10 +253,53 @@ true
 false
 
 4.Assignment operator:
-=	  Simple Assignment	       Takes the value on the right and puts it into the variable on the left
-+=	   Add and Assign	       Adds and assigns the result
--=	  Subtract and Assign	   Subtracts and assigns the resuit
-*=	  Multiply and Assign	   Multiplies and assigns the result
+=	    Simple Assignment	       Takes the value on the right and puts it into the variable on the left
++=	  Add and Assign	         Adds and assigns the result
+-=	  Subtract and Assign	     Subtracts and assigns the resuit
+*=	  Multiply and Assign	     Multiplies and assigns the result
 /=	  Divide and Assign	       Divides and assigns the result
 %=	  Modulo and Assign	       Applies modulus and assigns the result
+
+
+/*import java.util.Scanner;
+
+public class Assignment {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int a = sc.nextInt();
+
+        System.out.println("Original value: " + a);
+
+        a += 5;
+        System.out.println("After += 5: " + a);
+
+        a -= 2;
+        System.out.println("After -= 2: " + a);
+
+        a *= 2;
+        System.out.println("After *= 2: " + a);
+
+        a /= 2;
+        System.out.println("After /= 2: " + a);
+
+        a %= 3;
+        System.out.println("After %= 3: " + a);
+
+        sc.close();
+    }
+}*/
+
+INPUT and OUTPUT:
+Enter a number: 3
+Original value: 3
+After += 5: 8
+After -= 2: 6
+After *= 2: 12
+After /= 2: 6
+After %= 3: 0
+
+
 
