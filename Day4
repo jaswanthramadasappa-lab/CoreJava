@@ -1,0 +1,269 @@
+string builder || string buffer follows the same methods with same syntax
+the only differnce if string builder is mutable and not synchronized where as string buffer  is mutable and synchronized
+
+
+
+1. What is StringBuilder?
+First, remember that Java Strings are immutable.
+
+Immutable means: Once a String object is created, its content cannot be changed.
+In Java, StringBuilder is a class used to create and modify strings without creating a new object every time we make a change.
+
+It is especially useful when we perform many string operations, such as:
+- Adding characters.
+- Deleting characters.
+- Reversing a string.
+- Replacing characters.
+- Inserting characters.
+- Modifying strings repeatedly.
+---------------2. How to create StringBuilder---------------
+1.StringBuilder sb = new StringBuilder();
+Method 2: With initial String
+StringBuilder sb = new StringBuilder("Jaswanth");
+Method 3: With initial capacity
+StringBuilder sb = new StringBuilder(50);
+
+
+
+
+
+3. Important StringBuilder methods
+Let's use this example:
+StringBuilder sb = new StringBuilder("jaswanth");
+
+
+1. append()
+Adds text at the end of the existing string.
+
+Syntax:
+sb.append(value);
+
+
+Example:
+StringBuilder sb = new StringBuilder("Java");
+
+sb.append(" Programming");
+
+System.out.println(sb);
+
+
+Output:
+Java Programming
+
+
+2. insert()
+Inserts characters at a specified index.
+
+Syntax:
+sb.insert(index, value);
+
+
+Example:
+StringBuilder sb = new StringBuilder("Java");
+
+sb.insert(2, "Hello");
+
+System.out.println(sb);
+
+
+Output:
+JaHellova
+
+
+Explanation: "Hello" is inserted at index 2.
+3. delete()
+Deletes characters between two indexes.
+
+Syntax:
+sb.delete(start, end);
+
+
+Example:
+StringBuilder sb = new StringBuilder("Java Programming");
+
+sb.delete(4, 16);
+
+System.out.println(sb);
+
+
+Output:
+Java
+
+
+Remember: The ending index is excluded.
+4. deleteCharAt()
+Deletes a character at a specified index.
+
+Syntax:
+sb.deleteCharAt(index);
+
+
+Example:
+StringBuilder sb = new StringBuilder("jaswanth");
+
+sb.deleteCharAt(2);
+
+System.out.println(sb);
+
+
+Output:
+jawanth
+
+
+5. replace()
+Replaces characters between two indexes with new text.
+
+Syntax:
+sb.replace(start, end, "new text");
+
+
+Example:
+StringBuilder sb = new StringBuilder("Java Programming");
+
+sb.replace(0, 4, "Python");
+
+System.out.println(sb);
+
+
+Output:
+Python Programming
+
+
+6. reverse()
+Reverses the entire StringBuilder content.
+
+Syntax:
+sb.reverse();
+
+
+Example:
+StringBuilder sb = new StringBuilder("jaswanth");
+
+sb.reverse();
+
+System.out.println(sb);
+
+
+Output:
+htnawsaj
+
+
+7. charAt()
+Returns the character at the specified index.
+StringBuilder sb = new StringBuilder("jaswanth");
+
+System.out.println(sb.charAt(0));
+System.out.println(sb.charAt(3));
+
+
+Output:
+j
+w
+
+
+8. setCharAt()
+Changes the character at a specified index.
+
+Syntax:
+sb.setCharAt(index, character);
+
+
+Example:
+StringBuilder sb = new StringBuilder("jaswanth");
+
+sb.setCharAt(0, 'J');
+
+System.out.println(sb);
+
+
+Output:
+Jaswanth
+
+
+9. length()
+Returns the number of characters.
+StringBuilder sb = new StringBuilder("jaswanth");
+
+System.out.println(sb.length());
+
+
+Output:
+8
+
+
+10. capacity()
+Returns the current capacity of the StringBuilder.
+StringBuilder sb = new StringBuilder("Java");
+
+System.out.println(sb.capacity());
+
+
+Output:
+20
+
+
+Explanation:
+
+Default capacity = 16
+
+Initial string length = 4
+
+Total capacity = 16 + 4 = 20.
+
+Method	         Purpose
+indexOf("a")	   Finds first occurrence
+lastIndexOf("a")	Finds last occurrence
+substring(1)	     Extracts from index 1
+substring(1, 4)	    Extracts from index 1 to 3
+toString()	        Converts StringBuilder into String
+setLength(5)	       Changes the length
+getChars()	          Copies characters into a character array
+chars()                	Returns an IntStream of characters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------class--------------------
+types of class
+Normal / Concrete Class – A regular class with implementation.it is used to create the objects.
+
+
+
+Abstract Class – A class declared using the abstract keyword.
+
+
+
+Final Class – A class declared using the final keyword; it cannot be inherited.
+
+
+
+Nested Class – A class declared inside another class.
+
+
+
+Static Nested Class – A static class declared inside another class.
+
+
+
+Inner Class – A non-static class declared inside another class.
+annanomus class -without class name
+functions in java
+1.with parameters with return type
+2.with parameter without return type
+3.without parameter with return type
+4.wihtout parameter without return type
