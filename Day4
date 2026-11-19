@@ -223,21 +223,6 @@ chars()                	Returns an IntStream of characters
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---------------class--------------------
 types of class
 Normal / Concrete Class – A regular class with implementation.it is used to create the objects.
@@ -267,3 +252,35 @@ functions in java
 2.with parameter without return type
 3.without parameter with return type
 4.wihtout parameter without return type
+
+
+
+STATIC METHOD:
+
+class Main {
+
+    static void add(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+
+    public static void main(String[] args) {
+
+        Main.add(10, 20);
+    }
+}
+
+NON STATIC:
+
+class Main {
+
+    void add(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+
+    public static void main(String[] args) {
+
+        Main obj = new Main();
+
+        obj.add(10, 20);
+    }
+}
